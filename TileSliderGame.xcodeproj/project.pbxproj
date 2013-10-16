@@ -19,6 +19,9 @@
 		0316B45517F31AFF00D7B621 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0316B43D17F31AFF00D7B621 /* UIKit.framework */; };
 		0316B45D17F31AFF00D7B621 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0316B45B17F31AFF00D7B621 /* InfoPlist.strings */; };
 		0316B45F17F31AFF00D7B621 /* TileSliderGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0316B45E17F31AFF00D7B621 /* TileSliderGameTests.m */; };
+		0316B46B17F3DFDA00D7B621 /* JAWGameBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0316B46A17F3DFDA00D7B621 /* JAWGameBoard.m */; };
+		0316B46E17F3E1FD00D7B621 /* JAWTile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0316B46D17F3E1FD00D7B621 /* JAWTile.m */; };
+		036FBBD517FBBD6A0096EE81 /* JAWGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 036FBBD417FBBD6A0096EE81 /* JAWGameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		0316B45A17F31AFF00D7B621 /* TileSliderGameTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TileSliderGameTests-Info.plist"; sourceTree = "<group>"; };
 		0316B45C17F31AFF00D7B621 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0316B45E17F31AFF00D7B621 /* TileSliderGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TileSliderGameTests.m; sourceTree = "<group>"; };
+		0316B46917F3DFDA00D7B621 /* JAWGameBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAWGameBoard.h; sourceTree = "<group>"; };
+		0316B46A17F3DFDA00D7B621 /* JAWGameBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAWGameBoard.m; sourceTree = "<group>"; };
+		0316B46C17F3E1FD00D7B621 /* JAWTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAWTile.h; sourceTree = "<group>"; };
+		0316B46D17F3E1FD00D7B621 /* JAWTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAWTile.m; sourceTree = "<group>"; };
+		036FBBD317FBBD6A0096EE81 /* JAWGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAWGameViewController.h; sourceTree = "<group>"; };
+		036FBBD417FBBD6A0096EE81 /* JAWGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAWGameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +116,9 @@
 		0316B43F17F31AFF00D7B621 /* TileSliderGame */ = {
 			isa = PBXGroup;
 			children = (
+				036FBBD317FBBD6A0096EE81 /* JAWGameViewController.h */,
+				036FBBD417FBBD6A0096EE81 /* JAWGameViewController.m */,
+				0316B46817F3DF9700D7B621 /* models */,
 				0316B44817F31AFF00D7B621 /* JAWAppDelegate.h */,
 				0316B44917F31AFF00D7B621 /* JAWAppDelegate.m */,
 				0316B44B17F31AFF00D7B621 /* Images.xcassets */,
@@ -142,6 +154,17 @@
 				0316B45B17F31AFF00D7B621 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0316B46817F3DF9700D7B621 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				0316B46917F3DFDA00D7B621 /* JAWGameBoard.h */,
+				0316B46A17F3DFDA00D7B621 /* JAWGameBoard.m */,
+				0316B46C17F3E1FD00D7B621 /* JAWTile.h */,
+				0316B46D17F3E1FD00D7B621 /* JAWTile.m */,
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0316B46E17F3E1FD00D7B621 /* JAWTile.m in Sources */,
+				036FBBD517FBBD6A0096EE81 /* JAWGameViewController.m in Sources */,
+				0316B46B17F3DFDA00D7B621 /* JAWGameBoard.m in Sources */,
 				0316B44617F31AFF00D7B621 /* main.m in Sources */,
 				0316B44A17F31AFF00D7B621 /* JAWAppDelegate.m in Sources */,
 			);
@@ -442,6 +468,7 @@
 				0316B46417F31AFF00D7B621 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0316B46517F31AFF00D7B621 /* Build configuration list for PBXNativeTarget "TileSliderGameTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +477,7 @@
 				0316B46717F31AFF00D7B621 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

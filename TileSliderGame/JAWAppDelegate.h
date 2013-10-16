@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class JAWGameViewController;
+
 @interface JAWAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) JAWGameViewController *mainViewController;
 @end
